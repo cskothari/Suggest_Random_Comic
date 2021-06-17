@@ -38,16 +38,25 @@ label{
     border-color: #0d47a1;
 }
 
-/* .txtbox:valid{
+.txtbox:valid{
     border-color: green;
 }
 
-.txtbox:invalid{
-    border-color: red;
+/* [value="Verify OTP"],[class="OTP-lbl"],[name="Input-OTP"]{
+    display: none;
 } */
+
+/* .txtbox:invalid{
+    border-color: red;
+}  */
 
 .button{
     width: 15em;
     margin-left: 25px;
     margin-top: 25px;
+}
+
+.hidden{
+    display: none; 
+    color: red;
 }

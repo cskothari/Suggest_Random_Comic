@@ -10,22 +10,21 @@
 <body>
     <div>
         <h1>Get Random Comic</h1>
-        <form action="ThankYou.php" method="POST" autocomplete="off">
+        <form action="ValidateAndStoreData.php" method="POST" >
             <label >Enter Email:</label>
             <br>
             <input id="Username" class="txtbox" type="email" name="Username" placeholder="Email Id" required>
             <br><br>
-            <input class="button" type="button" value="New User" name="NewUserbtn" onclick="getTONewUserhtml()">
-            <input class="button" type="submit" value="Get Random Comic" name="getRandomComic">
-            <input class="button" type="button" value="Unsubscribe" name="Unsubscribe">
+            
+            <label class="OTP-lbl">Enter OTP:</label>
+            <br>
+            <input class="txtbox" type="text" name="Input-OTP" placeholder="OTP">
+            <br><br>
+            
+            <input class="button" type="submit" value="Send OTP" name="SendOTP">
+            <input class="button" type="button" value="Verify OTP" name="getOTP-btn">
         </form>
         <p class="hidden">text hideen</p>
     </div>
-    <script>
-        var ele=document.getElementsByName("NewUserbtn");
-        function getTONewUserhtml(){
-            window.location.href="http://localhost/RtLearn//NewUser.html";
-        }
-    </script>
 </body>
 </html>
